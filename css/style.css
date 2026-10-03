@@ -1,0 +1,101 @@
+:root {
+    --bgcolor: #dddddd;
+    --headercolor: #cc75f5;
+    --textcolor1: #f4f1f1;
+    --textcolor2: #ffffff;
+    --footercolor: #050505;
+
+    --spacingl: 10px;
+    --spacing: 20px;
+    --spacing2: 30px;
+    --spacing3: 40px;
+    --spacing4: 50px;
+    --spacing5: 60px;
+
+    --stext: 15px;
+    --mtext: 20px;
+    --ltext: 26px;
+    --name: 32px;
+    --header: 38px;
+
+    text-align: center;
+
+}
+
+body {
+    font-family: 'Impact';
+    font-size: var(--mtext);
+    text-align: center;
+
+}
+
+h1{
+    font-size: var(--header);
+    color: var(--textcolor1);
+}
+
+h2{
+    font-size: var(--ltext);
+    color: var(--textcolor2);
+}
+
+h3{
+    font-size: var(--name);
+    color: var(--textcolor1);
+}
+
+header{
+    
+    background-color: var(--headercolor);
+    padding: var(--spacing2);
+    text-align: center;
+}
+
+footer{
+    background-color: var(--footercolor);
+    padding: var(--spacingl);
+    text-align: center;
+    color: var(--textcolor1);
+}
+
+button {
+    background-color: var(--headercolor);
+    color: var(--textcolor1);
+    cursor: pointer;
+}
+
+slider {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+nav{
+    background-color: var(--headercolor);
+    padding: var(--spacing2);
+    text-align: center;
+}
+
+nav a {
+    color: var(--textcolor1);
+    text-decoration: none;
+    margin: var(--spacing);
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a:focus {
+    outline: 2px solid var(--textcolor1);
+    background-color: var(--textcolor2);
+}
+
+.card {
+    background-color: var(--textcolor2);
+    padding: var(--spacing2);
+    margin: var(--spacing2);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
