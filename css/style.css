@@ -169,3 +169,8 @@ button:hover {
         transition: none;
     }
 }
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing2);
+}

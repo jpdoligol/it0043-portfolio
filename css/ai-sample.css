@@ -1,0 +1,294 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page layout */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f4f8;
+    color: #222;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #202a44, #4056a1);
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    letter-spacing: 2px;
+}
+
+/* Navigation */
+nav {
+    background-color: #111827;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+/* Main content */
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+/* Introduction section */
+section {
+    background-color: white;
+    text-align: center;
+    padding: 35px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #4056a1;
+    font-size: 30px;
+}
+
+/* Works section */
+article {
+    background-color: white;
+    text-align: center;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+article h4 {
+    color: #202a44;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+article img {
+    width: 120px;
+    height: 100px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 8px;
+    border: 3px solid #4056a1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+article img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* Skills page */
+caption {
+    display: block;
+    margin-bottom: 25px;
+}
+
+caption h2 {
+    font-size: 30px;
+    color: #4056a1;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+tbody {
+    border-bottom: 1px solid #ddd;
+}
+
+tr {
+    height: 65px;
+}
+
+th {
+    text-align: left;
+    width: 30%;
+    color: #202a44;
+}
+
+td {
+    padding: 10px;
+}
+
+td:last-child {
+    width: 70px;
+    font-weight: bold;
+    color: #4056a1;
+}
+
+/* Skill sliders */
+input[type="range"] {
+    width: 100%;
+    accent-color: #4056a1;
+    cursor: pointer;
+}
+
+/* Software images */
+main > body {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+main > body img {
+    width: 100px;
+    height: 50px;
+    object-fit: contain;
+    margin: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Mobile design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 32px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    main {
+        width: 94%;
+        margin: 25px auto;
+    }
+
+    section,
+    article {
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    article img {
+        width: 100px;
+        height: 85px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th {
+        width: 35%;
+    }
+}
+
+/* Contact page */
+form {
+    max-width: 600px;
+    margin: 25px auto 0;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #202a44;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #4056a1;
+    box-shadow: 0 0 5px rgba(64, 86, 161, 0.4);
+}
+
+form input[type="submit"] {
+    background-color: #4056a1;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #202a44;
+}
+
+/* About page */
+.card {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.card h2 {
+    text-align: center;
+    color: #4056a1;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.card p {
+    color: #444;
+    font-size: 17px;
+    margin-bottom: 18px;
+}
